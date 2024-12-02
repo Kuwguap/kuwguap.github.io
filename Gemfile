@@ -4,6 +4,13 @@ source "https://rubygems.org"
 
 gem "jekyll-theme-chirpy", "~> 7.2"
 
+gem "csv"
+
+gem "rack"
+
+gem "webrick"
+
+
 gem "html-proofer", "~> 5.0", group: :test
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do
@@ -12,3 +19,5 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
 end
 
 gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
+
+

@@ -9,37 +9,37 @@ theme: jekyll-theme-chirpy
 lang: en
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone:
+timezone: Africa/Accra
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: Rodney's Intuition # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: The thought process of Rodney # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+url: "https://kuwguap.github.io"
 
 github:
-  username: github_username # change to your GitHub username
+  username: kuwguap # change to your GitHub username
 
 twitter:
-  username: twitter_username # change to your Twitter username
+  username: kuwrodney # change to your Twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  name: Glenn Rodney
+  email: richierodney434@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
+    - https://twitter.com/kuwrodney # change to your Twitter homepage
+    - https://github.com/kuwguap # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -59,9 +59,9 @@ webmaster_verifications:
 # Web Analytics Settings
 analytics:
   google:
-    id: # fill in your Google Analytics ID
+    id: 284968985
   goatcounter:
-    id: # fill in your GoatCounter ID
+    id: vmvrei41fun51vxfthg0k9xkj1rx9nnl4deakh1j2ofqppyx1o
   umami:
     id: # fill in your Umami ID
     domain: # fill in your Umami domain
@@ -75,7 +75,7 @@ analytics:
 
 # Page views settings
 pageviews:
-  provider: # now only supports 'goatcounter'
+  provider: vmvrei41fun51vxfthg0k9xkj1rx9nnl4deakh1j2ofqppyx1o # now only supports 'goatcounter'
 
 # Prefer color scheme setting.
 #
@@ -95,10 +95,11 @@ theme_mode: # [light | dark]
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-cdn:
+cdn: https://cdn.com
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+
+avatar: https://gitlab.com/uploads/-/system/user/avatar/2906293/avatar.png?width=400
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.

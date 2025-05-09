@@ -30,6 +30,6 @@ The feedback from LinkedIn was also positive. One connection mentioned, **"The U
 Another insightful comment I received was: **"I really like the focus on methodology, tool suggestions, and command prompts—super helpful for structured testing. Maybe consider adding a small interactive preview or visual workflow to show how users move through each phase. Overall, great concept—excited to see how it grows!"** This is a fantastic idea about the interactive preview! As soon as I have the dashboard more functional, I'll definitely explore how to integrate a visual workflow to further enhance user understanding.
 
 This is what the UI is now.
-![Initial Figma UI Design](/kuwguap.github.io/assets/img/figma-ui-v2.png)
+![Initial Figma UI Design](/assets/img/figma-ui-v2.png)
 
 It's incredibly helpful to get this early feedback, and it's already shaping the direction of the UI development. Stay tuned for the next post, where I'll hopefully have updates on implementing these suggestions and more progress to share!

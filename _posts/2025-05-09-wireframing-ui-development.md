@@ -31,6 +31,7 @@ Another insightful comment I received was: **"I really like the focus on methodo
 
 This is what the UI is now.
 
-![Initial Figma UI Design](/assets/img/figma-ui-v2.png)
+![Initial Figma UI Design](/assets/figma-ui-v2.png)
+![Initial Figma UI Design](../assets/figma-ui-v2.png)
 
 It's incredibly helpful to get this early feedback, and it's already shaping the direction of the UI development. Stay tuned for the next post, where I'll hopefully have updates on implementing these suggestions and more progress to share!

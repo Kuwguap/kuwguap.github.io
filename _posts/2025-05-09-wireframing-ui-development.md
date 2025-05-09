@@ -1,10 +1,10 @@
 ---
 title: "Series 1: What Now? Wireframing & UI Dev - Part 2"
-date: 2025-05-08
+date: 2025-05-09
 layout: post
 category: RAWPA
 series: "So What Now?"
-series_part: 1
+series_part: 2
 ---
 
 Alright, picking up where we left off in the last post, it's time to dive into the visual side of things. As I mentioned, the core of this project is building a tool to help streamline the penetration testing workflow, and that means designing an interface that's both intuitive and efficient.

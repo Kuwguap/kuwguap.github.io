@@ -13,13 +13,14 @@ My first step was wireframing. I initially started with Balsamiq, thinking its s
 
 Mapping out the flowchart, mind map, sticky notes, and sequence diagrams in Whimsical has already made a huge difference. Having a clear visual representation of the application's flow will make the design process much smoother.
 
-![Whimsical Flowchart](/kuwguap.github.io/assets/img/whimsical-flow.png)
+![Whimsical Flowchart](https://github.com/Kuwguap/kuwguap.github.io/tree/main/assets/img/whimsical-flow.png)
+![whim flow](https://github.com/Kuwguap/kuwguap.github.io/blob/main/assets/img/whimsical-flow.png)
 
 With the flow mapped out, it was time to tackle the UI in Figma. Let me tell you, it's a lot! I have a mental image of what I want, but translating that into a functional and visually appealing UI is proving to be a challenge.
 
 Thankfully, YouTube is a lifesaver. After watching two insightful videos from the [Juxopposed Channel](https://www.youtube.com/@juxtopposed), I felt ready to start putting pixels on the screen.
 
-![Initial Figma UI Design](/kuwguap.github.io/assets/img/figma-ui-v1.png)
+![Initial Figma UI Design](../assets/img/figma-ui-v1.png)
 
 Eager for feedback, I shared my initial UI design on Reddit and reached out to fellow pentesters on LinkedIn. The initial responses have been encouraging and provided some valuable insights.
 

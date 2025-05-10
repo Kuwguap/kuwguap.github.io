@@ -1,6 +1,6 @@
 ---
 title: "Series 1: So What Now? - Part 1"
-date: 2025-05-08
+date: 2025-05-09
 layout: post
 category: RAWPA
 series: "So What Now?"

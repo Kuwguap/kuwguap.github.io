@@ -13,14 +13,13 @@ My first step was wireframing. I initially started with Balsamiq, thinking its s
 
 Mapping out the flowchart, mind map, sticky notes, and sequence diagrams in Whimsical has already made a huge difference. Having a clear visual representation of the application's flow will make the design process much smoother.
 
-![Whimsical Flowchart](https://github.com/Kuwguap/kuwguap.github.io/tree/main/assets/img/whimsical-flow.png)
-![whim flow](https://github.com/Kuwguap/kuwguap.github.io/blob/main/assets/img/whimsical-flow.png)
+![Whimsical Flowchart](https://raw.githubusercontent.com/Kuwguap/kuwguap.github.io/main/assets/img/whimsical-flow.png)
 
 With the flow mapped out, it was time to tackle the UI in Figma. Let me tell you, it's a lot! I have a mental image of what I want, but translating that into a functional and visually appealing UI is proving to be a challenge.
 
 Thankfully, YouTube is a lifesaver. After watching two insightful videos from the [Juxopposed Channel](https://www.youtube.com/@juxtopposed), I felt ready to start putting pixels on the screen.
 
-![Initial Figma UI Design](../assets/img/figma-ui-v1.png)
+![Initial Figma UI Design](https://raw.githubusercontent.com/Kuwguap/kuwguap.github.io/main/assets/img/figma-ui-v1.png)
 
 Eager for feedback, I shared my initial UI design on Reddit and reached out to fellow pentesters on LinkedIn. The initial responses have been encouraging and provided some valuable insights.
 
@@ -32,7 +31,6 @@ Another insightful comment I received was: **"I really like the focus on methodo
 
 This is what the UI is now.
 
-![Initial Figma UI Design](/assets/figma-ui-v2.png)
-![Initial Figma UI Design](../assets/figma-ui-v2.png)
+![Initial Figma UI Design](https://raw.githubusercontent.com/Kuwguap/kuwguap.github.io/main/assets/figma-ui-v2.png)
 
 It's incredibly helpful to get this early feedback, and it's already shaping the direction of the UI development. Stay tuned for the next post, where I'll hopefully have updates on implementing these suggestions and more progress to share!

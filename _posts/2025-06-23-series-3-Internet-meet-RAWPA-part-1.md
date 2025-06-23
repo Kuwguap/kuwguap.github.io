@@ -35,4 +35,4 @@ The testing phase has been incredible so far. We've got about **22 users** on bo
 
 I'm hyped about where this is headed, and I'll keep you all in the loop. The future is bright, and the pentesting train of thought is about to get a serious rejuvenation.
 
-Stay tuned, and keep hacking 🥷🏾
+Stay tuned, and keep hacking 🥷🏾!

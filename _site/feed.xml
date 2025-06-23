@@ -1,0 +1,123 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/</id>
+  <title>Rodney's Intuition</title>
+  <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
+  <updated>2025-06-18T17:47:24+00:00</updated>
+  <author>
+    <name>Glenn Rodney</name>
+    <uri>http://localhost:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <rights> © 2025 Glenn Rodney </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Series 2: Implementing the WPA in RAWPA - Part 1</title>
+    <link href="http://localhost:4000/posts/series-2-implementing-wpa-in-rawpa-part-1/" rel="alternate" type="text/html" title="Series 2: Implementing the WPA in RAWPA - Part 1" />
+    <published>2025-06-18T00:00:00+00:00</published>
+  
+    <updated>2025-06-18T15:14:02+00:00</updated>
+  
+    <id>http://localhost:4000/posts/series-2-implementing-wpa-in-rawpa-part-1/</id>
+    <content type="text/html" src="http://localhost:4000/posts/series-2-implementing-wpa-in-rawpa-part-1/" />
+    <author>
+      <name>Glenn Rodney</name>
+    </author>
+
+  
+    
+    <category term="RAWPA" />
+    
+  
+
+  <summary>Hey everyone, it’s been a minute!  Welcome back to the devlog for RAWPA. After laying down the initial groundwork and figuring out “so, what now?”, I’ve been deep in the trenches turning the concept into a functional tool. This next series of posts is all about the journey of implementing the Web Pentesting Assistant (WPA), and let me tell you, it’s been a ride.  A Glimpse into the Future  One ...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Bringing Blossom to Life: My First Hackathon Journey with AI Mental Wellness</title>
+    <link href="http://localhost:4000/posts/blossom-hackathon/" rel="alternate" type="text/html" title="Bringing Blossom to Life: My First Hackathon Journey with AI Mental Wellness" />
+    <published>2025-06-18T00:00:00+00:00</published>
+  
+    <updated>2025-06-18T14:08:48+00:00</updated>
+  
+    <id>http://localhost:4000/posts/blossom-hackathon/</id>
+    <content type="text/html" src="http://localhost:4000/posts/blossom-hackathon/" />
+    <author>
+      <name>Glenn Rodney</name>
+    </author>
+
+  
+    
+    <category term="tech" />
+    
+    <category term="projects" />
+    
+    <category term="hackathon" />
+    
+  
+
+  <summary>Hey everyone,  I’m excited to share a project I’ve been pouring my energy into lately: Blossom, a voice-enabled mental health companion designed to help us all reflect, cope, and grow emotionally. And guess what? I recently submitted Blossom to its very first hackathon!  From Idea to (Almost) Reality  The idea for Blossom sparked from recognizing a real need in our often-hectic lives. We all fa...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Series 1: What Now? Wireframing &amp; UI Dev - Part 2</title>
+    <link href="http://localhost:4000/posts/wireframing-ui-development/" rel="alternate" type="text/html" title="Series 1: What Now? Wireframing &amp;amp; UI Dev - Part 2" />
+    <published>2025-05-09T00:00:00+00:00</published>
+  
+    <updated>2025-06-18T14:08:48+00:00</updated>
+  
+    <id>http://localhost:4000/posts/wireframing-ui-development/</id>
+    <content type="text/html" src="http://localhost:4000/posts/wireframing-ui-development/" />
+    <author>
+      <name>Glenn Rodney</name>
+    </author>
+
+  
+    
+    <category term="RAWPA" />
+    
+  
+
+  <summary>Alright, picking up where we left off in the last post, it’s time to dive into the visual side of things. As I mentioned, the core of this project is building a tool to help streamline the penetration testing workflow, and that means designing an interface that’s both intuitive and efficient.  My first step was wireframing. I initially started with Balsamiq, thinking its simplicity would be a g...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Series 1: So What Now? - Part 1</title>
+    <link href="http://localhost:4000/posts/so-what-now/" rel="alternate" type="text/html" title="Series 1: So What Now? - Part 1" />
+    <published>2025-05-09T00:00:00+00:00</published>
+  
+    <updated>2025-05-09T00:00:00+00:00</updated>
+  
+    <id>http://localhost:4000/posts/so-what-now/</id>
+    <content type="text/html" src="http://localhost:4000/posts/so-what-now/" />
+    <author>
+      <name>Glenn Rodney</name>
+    </author>
+
+  
+    
+    <category term="RAWPA" />
+    
+  
+
+  <summary>Well, here we go. Putting thoughts down “on paper” – or rather, onto a digital page that anyone with an internet connection can stumble upon. It feels a little… exposed, to be honest. For a while now, the hum in the back of my mind has been getting louder, a persistent buzz of wanting to build something. Something that scratches a particular itch I’ve felt throughout my journey in the security ...</summary>
+
+  </entry>
+
+</feed>
+
+

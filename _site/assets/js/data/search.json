@@ -1,5 +1,37 @@
 [
   {
+    "title": "From Name to Shell-Ready: A Deep Dive into a Real-World Recon Workflow",
+    "url": "/posts/A-Deep-Dive-Into-Recon-Workflow/",
+    "categories": "pentesting, reconnaissance, technical",
+    "tags": "",
+    "date": "2025-06-30 13:15:27 +0000",
+    "content": "So, you’ve landed the engagement. The scope is defined, the rules of engagement are set, and the target is locked: GravexLabs. You have the name, and that’s it. This is the starting point for every..."
+  },
+  {
+    "title": "It's Alive! RAWPA Gained a Brain.",
+    "url": "/posts/series-3-internet-meet-RAWPA-part-2/",
+    "categories": "RAWPA",
+    "tags": "rawpa, wpa, cybersecurity, devlog, ai, rag-model",
+    "date": "2025-06-25 00:00:00 +0000",
+    "content": "Hey internet, you’re not going to believe this. RAWPA gained a brain.  I’ve hardly been sleeping, pushing code and chasing ideas. Yesterday, I finally crashed for about six solid hours, and guess w..."
+  },
+  {
+    "title": "Series 3: Internet meet RAWPA - Part 1",
+    "url": "/posts/series-3-Internet-meet-RAWPA-part-1/",
+    "categories": "RAWPA",
+    "tags": "rawpa, wpa, cybersecurity, devlog, ai, rag-model",
+    "date": "2025-06-23 00:00:00 +0000",
+    "content": "Hey internet, this is RAWPA, RAWPA internet!  Man, the journey of building RAWPA has been a rollercoaster of code, coffee, and some seriously insightful conversations. I recently had a chat with a ..."
+  },
+  {
+    "title": "Series 2: Implementing the WPA in RAWPA - Part 2",
+    "url": "/posts/series-2-implementing-the-WPA-in-rawpa-part-2/",
+    "categories": "RAWPA",
+    "tags": "rawpa, wpa, cybersecurity, devlog, ai, rag-model",
+    "date": "2025-06-18 00:00:00 +0000",
+    "content": "What’s up, everyone? I’m back with Part 2 on implementing the Web Penetration Assistant (WPA) logic in RAWPA. Last time, we talked about the initial steps, and now, I’ve got some major updates to s..."
+  },
+  {
     "title": "Series 2: Implementing the WPA in RAWPA - Part 1",
     "url": "/posts/series-2-implementing-wpa-in-rawpa-part-1/",
     "categories": "RAWPA",

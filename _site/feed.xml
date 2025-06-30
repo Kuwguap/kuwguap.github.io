@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Rodney's Intuition</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-06-18T17:47:24+00:00</updated>
+  <updated>2025-06-30T16:49:34+00:00</updated>
   <author>
     <name>Glenn Rodney</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,106 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>From Name to Shell-Ready: A Deep Dive into a Real-World Recon Workflow</title>
+    <link href="http://localhost:4000/posts/A-Deep-Dive-Into-Recon-Workflow/" rel="alternate" type="text/html" title="From Name to Shell-Ready: A Deep Dive into a Real-World Recon Workflow" />
+    <published>2025-06-30T13:15:27+00:00</published>
+  
+    <updated>2025-06-30T13:15:27+00:00</updated>
+  
+    <id>http://localhost:4000/posts/A-Deep-Dive-Into-Recon-Workflow/</id>
+    <content type="text/html" src="http://localhost:4000/posts/A-Deep-Dive-Into-Recon-Workflow/" />
+    <author>
+      <name>Glenn Rodney</name>
+    </author>
+
+  
+    
+    <category term="pentesting" />
+    
+    <category term="reconnaissance" />
+    
+    <category term="technical" />
+    
+  
+
+  <summary>So, you’ve landed the engagement. The scope is defined, the rules of engagement are set, and the target is locked: GravexLabs. You have the name, and that’s it. This is the starting point for every offensive security operation, a blank canvas that, through skill and methodology, will be painted into a detailed map of attack surfaces, endpoints, and potential vulnerabilities.  This isn’t just ab...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>It's Alive! RAWPA Gained a Brain.</title>
+    <link href="http://localhost:4000/posts/series-3-internet-meet-RAWPA-part-2/" rel="alternate" type="text/html" title="It&amp;apos;s Alive! RAWPA Gained a Brain." />
+    <published>2025-06-25T00:00:00+00:00</published>
+  
+    <updated>2025-06-25T00:00:00+00:00</updated>
+  
+    <id>http://localhost:4000/posts/series-3-internet-meet-RAWPA-part-2/</id>
+    <content type="text/html" src="http://localhost:4000/posts/series-3-internet-meet-RAWPA-part-2/" />
+    <author>
+      <name>Glenn Rodney</name>
+    </author>
+
+  
+    
+    <category term="RAWPA" />
+    
+  
+
+  <summary>Hey internet, you’re not going to believe this. RAWPA gained a brain.  I’ve hardly been sleeping, pushing code and chasing ideas. Yesterday, I finally crashed for about six solid hours, and guess what? The idea for the new Pathway Methodology hit me like a bag of bricks. LOL.  I saw it vividly—exactly what the next evolution of RAWPA needed to be. And for those wondering, this isn’t that initia...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Series 3: Internet meet RAWPA - Part 1</title>
+    <link href="http://localhost:4000/posts/series-3-Internet-meet-RAWPA-part-1/" rel="alternate" type="text/html" title="Series 3: Internet meet RAWPA - Part 1" />
+    <published>2025-06-23T00:00:00+00:00</published>
+  
+    <updated>2025-06-23T15:22:21+00:00</updated>
+  
+    <id>http://localhost:4000/posts/series-3-Internet-meet-RAWPA-part-1/</id>
+    <content type="text/html" src="http://localhost:4000/posts/series-3-Internet-meet-RAWPA-part-1/" />
+    <author>
+      <name>Glenn Rodney</name>
+    </author>
+
+  
+    
+    <category term="RAWPA" />
+    
+  
+
+  <summary>Hey internet, this is RAWPA, RAWPA internet!  Man, the journey of building RAWPA has been a rollercoaster of code, coffee, and some seriously insightful conversations. I recently had a chat with a fellow pentester that completely lit up the path forward for RAWPA’s development. You know I’m all about getting this tool into your hands for testing, so when inspiration strikes, I gotta act fast.6 ...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Series 2: Implementing the WPA in RAWPA - Part 2</title>
+    <link href="http://localhost:4000/posts/series-2-implementing-the-WPA-in-rawpa-part-2/" rel="alternate" type="text/html" title="Series 2: Implementing the WPA in RAWPA - Part 2" />
+    <published>2025-06-18T00:00:00+00:00</published>
+  
+    <updated>2025-06-18T00:00:00+00:00</updated>
+  
+    <id>http://localhost:4000/posts/series-2-implementing-the-WPA-in-rawpa-part-2/</id>
+    <content type="text/html" src="http://localhost:4000/posts/series-2-implementing-the-WPA-in-rawpa-part-2/" />
+    <author>
+      <name>Glenn Rodney</name>
+    </author>
+
+  
+    
+    <category term="RAWPA" />
+    
+  
+
+  <summary>What’s up, everyone? I’m back with Part 2 on implementing the Web Penetration Assistant (WPA) logic in RAWPA. Last time, we talked about the initial steps, and now, I’ve got some major updates to share.  When I first started this project, my main goal was to lock down the MVP (Minimum Viable Product). For me, that meant getting the straight-up, no-frills methodologies in place. A simple, linear...</summary>
+
+  </entry>
 
   
   <entry>
@@ -39,82 +139,6 @@
   
 
   <summary>Hey everyone, it’s been a minute!  Welcome back to the devlog for RAWPA. After laying down the initial groundwork and figuring out “so, what now?”, I’ve been deep in the trenches turning the concept into a functional tool. This next series of posts is all about the journey of implementing the Web Pentesting Assistant (WPA), and let me tell you, it’s been a ride.  A Glimpse into the Future  One ...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Bringing Blossom to Life: My First Hackathon Journey with AI Mental Wellness</title>
-    <link href="http://localhost:4000/posts/blossom-hackathon/" rel="alternate" type="text/html" title="Bringing Blossom to Life: My First Hackathon Journey with AI Mental Wellness" />
-    <published>2025-06-18T00:00:00+00:00</published>
-  
-    <updated>2025-06-18T14:08:48+00:00</updated>
-  
-    <id>http://localhost:4000/posts/blossom-hackathon/</id>
-    <content type="text/html" src="http://localhost:4000/posts/blossom-hackathon/" />
-    <author>
-      <name>Glenn Rodney</name>
-    </author>
-
-  
-    
-    <category term="tech" />
-    
-    <category term="projects" />
-    
-    <category term="hackathon" />
-    
-  
-
-  <summary>Hey everyone,  I’m excited to share a project I’ve been pouring my energy into lately: Blossom, a voice-enabled mental health companion designed to help us all reflect, cope, and grow emotionally. And guess what? I recently submitted Blossom to its very first hackathon!  From Idea to (Almost) Reality  The idea for Blossom sparked from recognizing a real need in our often-hectic lives. We all fa...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Series 1: What Now? Wireframing &amp; UI Dev - Part 2</title>
-    <link href="http://localhost:4000/posts/wireframing-ui-development/" rel="alternate" type="text/html" title="Series 1: What Now? Wireframing &amp;amp; UI Dev - Part 2" />
-    <published>2025-05-09T00:00:00+00:00</published>
-  
-    <updated>2025-06-18T14:08:48+00:00</updated>
-  
-    <id>http://localhost:4000/posts/wireframing-ui-development/</id>
-    <content type="text/html" src="http://localhost:4000/posts/wireframing-ui-development/" />
-    <author>
-      <name>Glenn Rodney</name>
-    </author>
-
-  
-    
-    <category term="RAWPA" />
-    
-  
-
-  <summary>Alright, picking up where we left off in the last post, it’s time to dive into the visual side of things. As I mentioned, the core of this project is building a tool to help streamline the penetration testing workflow, and that means designing an interface that’s both intuitive and efficient.  My first step was wireframing. I initially started with Balsamiq, thinking its simplicity would be a g...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Series 1: So What Now? - Part 1</title>
-    <link href="http://localhost:4000/posts/so-what-now/" rel="alternate" type="text/html" title="Series 1: So What Now? - Part 1" />
-    <published>2025-05-09T00:00:00+00:00</published>
-  
-    <updated>2025-05-09T00:00:00+00:00</updated>
-  
-    <id>http://localhost:4000/posts/so-what-now/</id>
-    <content type="text/html" src="http://localhost:4000/posts/so-what-now/" />
-    <author>
-      <name>Glenn Rodney</name>
-    </author>
-
-  
-    
-    <category term="RAWPA" />
-    
-  
-
-  <summary>Well, here we go. Putting thoughts down “on paper” – or rather, onto a digital page that anyone with an internet connection can stumble upon. It feels a little… exposed, to be honest. For a while now, the hum in the back of my mind has been getting louder, a persistent buzz of wanting to build something. Something that scratches a particular itch I’ve felt throughout my journey in the security ...</summary>
 
   </entry>
 

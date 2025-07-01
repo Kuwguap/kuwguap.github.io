@@ -1,5 +1,13 @@
 [
   {
+    "title": "My Pentesting AI Learned a New Word: Orchestrate.",
+    "url": "/posts/series-4-My-Pentesting-AI-Learned-A-New-Word-Orchestrate/",
+    "categories": "RAWPA",
+    "tags": "rawpa, wpa, cybersecurity, devlog, ai, rag-model, neural-network",
+    "date": "2025-07-01 00:00:00 +0000",
+    "content": "Hey everyone, Kuwguap here.  It’s been a minute(literally just a day or two lol) since we last talked about the journey with RAWPA. The feedback has been amazing, and watching the community engage ..."
+  },
+  {
     "title": "From Name to Shell-Ready: A Deep Dive into a Real-World Recon Workflow",
     "url": "/posts/A-Deep-Dive-Into-Recon-Workflow/",
     "categories": "pentesting, reconnaissance, technical",

@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Rodney's Intuition</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-06-30T16:49:34+00:00</updated>
+  <updated>2025-07-01T21:04:46+00:00</updated>
   <author>
     <name>Glenn Rodney</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,30 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>My Pentesting AI Learned a New Word: Orchestrate.</title>
+    <link href="http://localhost:4000/posts/series-4-My-Pentesting-AI-Learned-A-New-Word-Orchestrate/" rel="alternate" type="text/html" title="My Pentesting AI Learned a New Word: Orchestrate." />
+    <published>2025-07-01T00:00:00+00:00</published>
+  
+    <updated>2025-07-01T00:00:00+00:00</updated>
+  
+    <id>http://localhost:4000/posts/series-4-My-Pentesting-AI-Learned-A-New-Word-Orchestrate/</id>
+    <content type="text/html" src="http://localhost:4000/posts/series-4-My-Pentesting-AI-Learned-A-New-Word-Orchestrate/" />
+    <author>
+      <name>Glenn Rodney</name>
+    </author>
+
+  
+    
+    <category term="RAWPA" />
+    
+  
+
+  <summary>Hey everyone, Kuwguap here.  It’s been a minute(literally just a day or two lol) since we last talked about the journey with RAWPA. The feedback has been amazing, and watching the community engage with the tool has been the most rewarding part of this whole process. Gained 30 users and about 30% of them active daily. But a question has been nagging at me, keeping me up at night: How can I push ...</summary>
+
+  </entry>
 
   
   <entry>
@@ -115,30 +139,6 @@
   
 
   <summary>What’s up, everyone? I’m back with Part 2 on implementing the Web Penetration Assistant (WPA) logic in RAWPA. Last time, we talked about the initial steps, and now, I’ve got some major updates to share.  When I first started this project, my main goal was to lock down the MVP (Minimum Viable Product). For me, that meant getting the straight-up, no-frills methodologies in place. A simple, linear...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Series 2: Implementing the WPA in RAWPA - Part 1</title>
-    <link href="http://localhost:4000/posts/series-2-implementing-wpa-in-rawpa-part-1/" rel="alternate" type="text/html" title="Series 2: Implementing the WPA in RAWPA - Part 1" />
-    <published>2025-06-18T00:00:00+00:00</published>
-  
-    <updated>2025-06-18T15:14:02+00:00</updated>
-  
-    <id>http://localhost:4000/posts/series-2-implementing-wpa-in-rawpa-part-1/</id>
-    <content type="text/html" src="http://localhost:4000/posts/series-2-implementing-wpa-in-rawpa-part-1/" />
-    <author>
-      <name>Glenn Rodney</name>
-    </author>
-
-  
-    
-    <category term="RAWPA" />
-    
-  
-
-  <summary>Hey everyone, it’s been a minute!  Welcome back to the devlog for RAWPA. After laying down the initial groundwork and figuring out “so, what now?”, I’ve been deep in the trenches turning the concept into a functional tool. This next series of posts is all about the journey of implementing the Web Pentesting Assistant (WPA), and let me tell you, it’s been a ride.  A Glimpse into the Future  One ...</summary>
 
   </entry>
 

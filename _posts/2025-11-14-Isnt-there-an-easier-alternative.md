@@ -8,4 +8,4 @@ series_part: 2
 tags: [rawpa, wpa, cybersecurity, devlog, ai, rag-model,neural-network, cybercon, methodology, ssh, updates]
 ---
 
-What's good everyone!
+What's good everyone! lol

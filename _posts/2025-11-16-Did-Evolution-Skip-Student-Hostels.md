@@ -35,7 +35,7 @@ It took a whole year! a whole bunch of supabase RLS violations, CSS nightmares b
 
 **After cooking in private, I’m here, and the sauce is ready to be served! Hot!!! Katalyma is now officially in beta.**
 
-![Katalyma landing page](https://raw.githubusercontent.com/Kuwguap/kuwguap.github.io/refs/heads/main/assets/img/katalyma.png)
+![Katalyma landing page](/assets/img/katalyma.webp)
 
 ### What’s Next: The Dev Log Series
 

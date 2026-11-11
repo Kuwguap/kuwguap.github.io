@@ -19,7 +19,7 @@ title: Rodney's Intuition # the main title
 tagline: The thought process of Rodney # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  Rodney's devlog on building RAWPA, web pentesting, CTFs, hackathons and side projects.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -59,9 +59,9 @@ webmaster_verifications:
 # Web Analytics Settings
 analytics:
   google:
-    id: 284968985
+    id: # fill in your Google Analytics 4 measurement ID (G-XXXXXXXXXX)
   goatcounter:
-    id: vmvrei41fun51vxfthg0k9xkj1rx9nnl4deakh1j2ofqppyx1o
+    id: 284968985 # your GoatCounter site code (<code>.goatcounter.com)
   umami:
     id: # fill in your Umami ID
     domain: # fill in your Umami domain
@@ -75,7 +75,7 @@ analytics:
 
 # Page views settings
 pageviews:
-  provider: vmvrei41fun51vxfthg0k9xkj1rx9nnl4deakh1j2ofqppyx1o # now only supports 'goatcounter'
+  provider: goatcounter # now only supports 'goatcounter'
 
 # Prefer color scheme setting.
 #
@@ -95,11 +95,11 @@ theme_mode: # [light | dark]
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-cdn: https://cdn.com
+cdn:
 
 # the avatar on sidebar, support local or CORS resources
 
-avatar: https://gitlab.com/uploads/-/system/user/avatar/2906293/avatar.png?width=400
+avatar: /assets/img/avatar.webp
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
@@ -133,7 +133,7 @@ comments:
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
   self_host:
-    enabled: # boolean, keep empty means false
+    enabled: true # boolean, keep empty means false
     # specify the Jekyll environment, empty means both
     # only works if `assets.self_host.enabled` is 'true'
     env: # [development | production]

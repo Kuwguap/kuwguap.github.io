@@ -47,7 +47,7 @@ This is just the beginning! I have many ideas for expanding Blossom, including d
 I've put together a short video showcasing Blossom in action. Take a look!
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/kiWmkzWve8Y?si=YSAuJCbf982ltoYd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="560" height="315" loading="lazy" src="https://www.youtube-nocookie.com/embed/kiWmkzWve8Y?si=YSAuJCbf982ltoYd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 I'm excited about the potential of Blossom and the journey ahead. Stay tuned for more updates!

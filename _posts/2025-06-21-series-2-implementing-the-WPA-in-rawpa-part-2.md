@@ -14,7 +14,7 @@ When I first started this project, my main goal was to lock down the MVP (Minimu
 
 I'll be real with you, though. It needs a lot of improvement. I had this super clear picture of how it would function in my mind, but somewhere along the way, I completely lost my train of thought, lol. It happens, right? Still, it's a solid foundation to build on. Here’s a peek at what the pathway looks like right now:
 
-![RAWPA pathway methodology](https://raw.githubusercontent.com/Kuwguap/kuwguap.github.io/main/assets/img/rawpa-pathway.png)
+![RAWPA pathway methodology](/assets/img/rawpa-pathway.webp)
 
 
 This whole project has been such a learning experience, and not just in coding. It's teaching me so much about communication and connecting with people on similar career paths, and honestly, it's been amazing. The community aspect is something I didn't expect but still incredibly grateful for.
@@ -26,7 +26,7 @@ I've pretty much nailed the core MVPs of RAWPA. The main AI using RAG is still a
 I sent out a few messages to some security groups and communities, and the response was great. We now have our first 11 users willing to test RAWPA and be early access users! It might seem like a small number to some, but if RAWPA helps even just one of them, I know I’ve done something great.
 
 To make this happen, I just recently pushed the project to Vercel. It's now live! It took me a solid hour of battling with build issues, but we made it, and it's up and running.
-![Deployment errors on Vercel](https://raw.githubusercontent.com/Kuwguap/kuwguap.github.io/main/assets/img/vercel-error.png)
+![Deployment errors on Vercel](/assets/img/vercel-error.webp)
 
 In case you're reading this and feeling a little FOMO, don't worry! You can still join the crew of testers and early access users. Just sign up using the link below:
 

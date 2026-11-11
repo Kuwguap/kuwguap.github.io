@@ -20,7 +20,7 @@ Anyway, let's dive into the mistakes and the madness.
 ### My First Mistake: The "Responsive What?" UI
 
 I’ll start with the rookie mistake that came back to bite me. I had never done any real UI/UX design before this project. I watched a couple of YouTube videos, got inspired by the clean look of Whimsical (the tool I used for wireframing), and just started… drawing.
-![RAWPA login vs Whimsical login](https://raw.githubusercontent.com/Kuwguap/kuwguap.github.io/main/assets/img/whim-raw.png)
+![RAWPA login vs Whimsical login](/assets/img/whim-raw.webp)
 
 No device responsiveness. No specific screen sizes. Just rectangles on a screen. It looked good on my development PC, so I figured, "Ship it!" A few weeks ago, a tester rightfully pointed out that the mobile view was completely broken. I spent two full days untangling that mess and making the app truly responsive. Lesson learned: think about all screens from day one.
 
@@ -31,7 +31,7 @@ That aside… about two days ago, I noticed features on RAWPA were failing. The 
 `FirebaseError: [code=resource-exhausted]: Quota exceeded.`
 
 I had hit **16,000 reads and 20,000 writes** in a single day. That's the entire free quota on Firebase. With just 33 users, this was insane. I was dumbfounded. I could either wait a day for the quota to reset or I could put on my detective hat and debug.
-![Firestore quota reached](https://raw.githubusercontent.com/Kuwguap/kuwguap.github.io/main/assets/img/quota.png)
+![Firestore quota reached](/assets/img/quota.webp)
 
 The culprit? A series of logical bugs born from late-night coding sessions.
 1.  **The Infinite Loop:** I had created a function that continuously checked Firestore for updates, in case I used my admin panel to disable a methodology. It was a dumb, brute-force way to solve a problem, and it was hammering the database.
@@ -40,7 +40,7 @@ The culprit? A series of logical bugs born from late-night coding sessions.
 On top of that, the app was loading all Firestore functions on startup, creating a queue that led to insane load times—sometimes up to 10 seconds. I knew the fix was probably caching with something like Redis, but I was hesitant. It meant more complexity and moving things around on Vercel, which has a 12-API limit on the free plan.
 
 Guess what? I did it anyway. I integrated **Upstash Redis**, added the environment variables, made a few tweaks, and boom—the speed improved dramatically. Sometimes I wish I’d started with Next.js, but after a failed attempt to migrate, I'm sticking with my React + Vite setup and making it work.
-![Upstash console](https://raw.githubusercontent.com/Kuwguap/kuwguap.github.io/main/assets/img/upstash.png)
+![Upstash console](/assets/img/upstash.webp)
 
 ### The New Feature, Born from a Real Pentest
 
@@ -52,7 +52,7 @@ I found interesting endpoints and potential vulnerabilities, but I had no organi
 
 Introducing the **Hunter's Board**.
 
-![Hunter's Board](https://raw.githubusercontent.com/Kuwguap/kuwguap.github.io/main/assets/img/hunterboard.png)
+![Hunter's Board](/assets/img/hunterboard.webp)
 
 It’s a Kanban-styled board built directly into RAWPA, designed for the way a pentester thinks. You can create cards for anything: domains, methodologies, findings, reports, code snippets, tools, you name it.
 

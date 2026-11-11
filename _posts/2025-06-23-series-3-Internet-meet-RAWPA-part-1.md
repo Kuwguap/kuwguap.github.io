@@ -14,14 +14,14 @@ Man, the journey of building RAWPA has been a rollercoaster of code, coffee, and
 
 And act fast, I did. Check out what's new:
 
-![New RAWPA Features](https://raw.githubusercontent.com/Kuwguap/kuwguap.github.io/main/assets/img/RAWPA-features.png)
+![New RAWPA Features](/assets/img/RAWPA-features.webp)
 
 ### Triple Threat Integration
 
 You're seeing that right! We've integrated **LOLBAS**, **WADCOMS**, and **GTFOBins** directly into RAWPA. One of my connections dropped this gem of an idea, and I just had to make it happen. Huge shoutout to you for the contribution – this is what the community is all about!
 
 Getting them integrated was an adventure in itself. Adding LOLBAS, for instance, was pretty simple since they have an awesome API page specifically for this kind of integration. The other two, however, were a bit of a hassle. I had to download the files directly from their GitHub repos and parse them into my database. Thankfully, they were all in markdown, so grepping the data I needed was easy work. Now you can access all three of these powerful resources in one place!
-![GTFOBins integration](https://raw.githubusercontent.com/Kuwguap/kuwguap.github.io/main/assets/img/GTFO.png)
+![GTFOBins integration](/assets/img/GTFO.webp)
 
 ### More Tools in the Arsenal
 

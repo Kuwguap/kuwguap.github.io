@@ -19,7 +19,7 @@ I saw it vividly—exactly what the next evolution of RAWPA needed to be. And fo
 So, let's get into it. All developments start out as bare sculptures. Even with a complex backend, they're just... static. They don't learn. To bring it to life, you have to give it a brain, a **neural network**. That's what lets a game component, a chess opponent, or a web app truly learn and grow.
 
 And that's exactly what I just implemented into RAWPA's new **Neural Pathway Methodology**. It's a neural network designed to learn from a massive plateau of pentest writeups, methodologies, vulnerabilities, tools, techniques, and case studies.
-![Prompt to Gemini in Neural pathway code](https://raw.githubusercontent.com/Kuwguap/kuwguap.github.io/main/assets/img/neural.png)
+![Prompt to Gemini in Neural pathway code](/assets/img/neural.webp)
 
 Before you ask, yes, RAWPA also has a more general AI feature that was going to use a RAG model to help with user prompts. I won't bore y'all with the technicals (at least not for now), but getting the RAG model incorporated was a hassle. The point is, while that's still in the works, this new Pathway Methodology is a different beast entirely. It's the specialized brain for crafting your attack paths.
 
@@ -29,7 +29,7 @@ Before you ask, yes, RAWPA also has a more general AI feature that was going to 
 I'm glad you asked. At its core, the process looks something like this:
 
 > Your string of prompts (as JSON) + RAWPA's plateau of info + a custom internal prompt **>** fed into Gemini **>** results in a personalized, "fine-tuned" response with actionable steps and commands, all tailored to your situation.
-![Response for Pathway Methodology](https://raw.githubusercontent.com/Kuwguap/kuwguap.github.io/main/assets/img/rawpa neural engine.png)
+![Response for Pathway Methodology](/assets/img/rawpa-neural-engine.webp)
 
 But let's break that down even further.
 
@@ -39,7 +39,7 @@ The **Neural Pathway Methodology** is an advanced, AI-powered system designed to
 
 #### Step 1: You Tell RAWPA What's Up
 You provide the details: your current pentesting stage, the target system, key findings, and any other context. This is the foundation. 
-![New RAWPA Pathway](https://raw.githubusercontent.com/Kuwguap/kuwguap.github.io/main/assets/img/pathway.png)
+![New RAWPA Pathway](/assets/img/pathway.webp)
 
 #### Step 2: The Neural Net Hits the Books
 Our system's neural network has been training on a huge database of real penetration testing writeups and reports. It's constantly learning from the collective experience of the cybersecurity community, identifying patterns and successful techniques.
@@ -61,8 +61,8 @@ This isn't a static system. You can rate the pathways and provide feedback. This
 - **Community-Driven Power**: The more you use it, the smarter it gets for everyone.
 
 The Neural Pathway Methodology is dynamic, data-driven, and always improving. It’s here to empower you to tackle any challenge with more confidence, efficiency, and insight than ever before.
-![New RAWPA Pathway results zoomed out](https://raw.githubusercontent.com/Kuwguap/kuwguap.github.io/main/assets/img/path-results-zoomed.png)
-![New RAWPA Pathway](https://raw.githubusercontent.com/Kuwguap/kuwguap.github.io/main/assets/img/path-results.png)
+![New RAWPA Pathway results zoomed out](/assets/img/path-results-zoomed.webp)
+![New RAWPA Pathway](/assets/img/path-results.webp)
 
 I'm incredibly excited about this. It feels like RAWPA just took a massive leap forward.
 

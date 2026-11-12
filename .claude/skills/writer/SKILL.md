@@ -20,7 +20,7 @@ He writes like he's catching up with friends from the security community: excite
    python3 .claude/skills/writer/scripts/style_check.py path/to/draft.md
    ```
    It prints the similarity to his posts, the features furthest from his voice (with his real values), and any AI tells.
-5. **Revise until it prints `RESULT: PASS`.** That means similarity ≥ 80%, **zero hard tells**, at most one soft tell, and **core rhythm distance ≤ 1.4**, the average number of SDs the draft sits from him on sentence length, short-sentence share, commas per sentence, word length, contractions and past-tense share (his own posts score 0.5–1.35 on this). Fix what the report names, in either direction:
+5. **Revise until it prints `RESULT: PASS`.** That means similarity ≥ 80%, **zero hard tells**, at most one soft-tell line (and that one no more than 1 over its limit), and **core rhythm distance ≤ 1.4**, the average number of SDs the draft sits from him on sentence length, short-sentence share, commas per sentence, word length, contractions and past-tense share (his own posts score 0.5–1.35 on this). Fix what the report names, in either direction:
    - `short_sent_ratio` high / `sent_len_mean` low / `commas_per_sent` low → the draft is too choppy (the usual failure). Join fragments into his comma-strung sentences: "I had 79 subdomains to check, and instead of using Eyewitness I went through them manually." Keep only the fragments that land a joke or a beat.
    - `short_sent_ratio` low / `long_sent_ratio` high → split a sentence and add a punchy fragment.
    - `contractions` low → contract. `headings_per_1k` high → cut headings. `past_ratio` high → add a present-tense status line ("I'm still dealing with this", "It's live now").
@@ -115,6 +115,8 @@ tags: [rawpa, cybersecurity, devlog]
 
 ## Imitation checklist (what gives away an AI pretending to be him)
 
+**The biggest one: he's earnest, not clever.** His real posts are sincere, a bit clumsy and full of plain hype ("Now for the exciting part", "I'm incredibly grateful", "if RAWPA helps even just one of them, I know I've done something great"). Imitations come out wittier than him, with crafted similes ("staring at it like it owed me money"), polished self-deprecating asides ("it wasn't, it never is") and neat antitheses. Use **at most one** simile or crafted joke per post. When in doubt, swap the clever line for a plain, slightly awkward, enthusiastic one.
+
 A skeptical reader flagged earlier drafts of this skill as AI at 80–88% while his real post scored 15%. These were the reasons. Check each one:
 
 - **Catchphrase stacking.** Too many signature phrases, spaced evenly, one or two per section, like a metronome. Real Rodney clusters: one section is full of jokes, the next is plain and technical with no slang at all.
@@ -132,6 +134,10 @@ A skeptical reader flagged earlier drafts of this skill as AI at 80–88% while 
 - **Moral closers.** "That felt fair to everyone." "It points you in a direction, and you do the actual work." He closes on a plan, a complaint, a joke or a sign-off.
 - **Fake intimacy.** "you know the story", or callbacks to stories the post never tells. Only reference a past post if it's real, and name it.
 - **Too-clean numbers and cute headings in every section.** Use at most one jokey heading; the others are plain ("Quick Update on RAWPA", "The Road Ahead").
+- **Copied quirks.** Don't reproduce a sample's quirk in the same form (every draft doing "word(aside" right after a noun). Vary where the roughness lands.
+- **Seams and misquotes.** "Speaking of X" when X was never mentioned, or a callback that misquotes an old post title. Only cite old posts by their exact title from the voice samples, or don't cite them.
+- **Hedges that sound balanced on purpose** ("not sure yet if 48 hours is too long or too short"). He commits to an opinion or says plainly that he doesn't know.
+- **Number at the end of every section.** One clean metric per post is plenty; the rest can be vague the way people are ("a solid hour", "a ton of POST requests").
 - **Sign-off reuse.** Vary it: one line, two lines, or just the CTA. Don't paste the same three-line sign-off every time.
 
 ## AI tells: never ship these

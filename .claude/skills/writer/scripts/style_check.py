@@ -132,6 +132,7 @@ HARD_TELLS = [  # (regex, why)
     (r"\bnot (?:just|only) [^.;!?]{1,40}, but (?:also )?\b", '"not just X, but Y"'),
     (r"\b(?:wasn'?t|isn'?t|was not|is not) (?:really )?(?:the |a |about )?[^.;!?]{1,40}[,;]\s*it (?:was|is|'s)\b", '"the problem wasn\'t X, it was Y" reveal'),
     (r"\byou know the (?:story|drill)\b|\bwe'?ve all been there\b", 'fake-intimacy line'),
+    (r"\blike (?:it|they|he|she) owed me\b|\blike a (?:kid|child) (?:in|on) a\b", 'crafted simile (he is earnest, not clever)'),
     (r"\b(?:isn'?t|aren'?t) just (?:a|an|another) [^.;!?]{1,40}[.;,]\s*(?:it'?s|they'?re)\b", '"isn\'t just X. It\'s Y"'),
     (r"\blet'?s dive (?:in|into)\b|\bdive deep\b|\bdeep dive into the world\b", '"let\'s dive in"'),
     (r"\bhere'?s (?:the (?:thing|kicker|breakdown|catch|deal|truth|scoop)|how it works|what you need)\b", '"here\'s the thing/deal/breakdown"'),
@@ -173,7 +174,7 @@ def tells(md):
         if n > cap:
             soft.append((why, n, cap))
     # catchphrase stacking: signature phrases from SKILL.md used verbatim
-    sig = [r"i'?ll be real with you", r'\bman,', r'\bboom\b', r'\bguess what\b', r'\bthe culprit\?', r'\bthen it hit me\b',
+    sig = [r"a whole different beast", r"i'?ll be real with you", r'\bman,', r'\bboom\b', r'\bguess what\b', r'\bthe culprit\?', r'\bthen it hit me\b',
            r'\bcame in clutch\b', r'\bbag of bricks\b', r'\bhyped\b', r'\bugh\b', r'\bseriously\.', r'\bkeep hacking\b']
     nsig = sum(1 for rx in sig if re.search(rx, low, flags=re.I))
     if nsig > 5:  # his busiest post (Wildest Week) uses 5
@@ -252,7 +253,7 @@ def score(md, prof):
             'words': len(ws), 'features': per, 'hard_tells': hard, 'soft_tells': soft,
             'rhythm_distance': round(rhythm_dist(per), 2),
             'rhythm_off': rhythm_off(per),
-            'pass': total >= 80 and not hard and len(soft) <= 1 and not rhythm_off(per)}
+            'pass': total >= 80 and not hard and len(soft) <= 1 and all(t[1] <= t[2] + 1 for t in soft) and not rhythm_off(per)}
 
 CORE = ['sent_len_mean', 'short_sent_ratio', 'commas_per_sent', 'word_len_mean', 'contractions', 'past_ratio']
 RHYTHM_MAX = 1.4  # his own posts, held out, score 0.47-1.35

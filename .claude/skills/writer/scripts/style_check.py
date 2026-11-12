@@ -132,7 +132,7 @@ HARD_TELLS = [  # (regex, why)
     (r"\bnot (?:just|only) [^.;!?]{1,40}, but (?:also )?\b", '"not just X, but Y"'),
     (r"\b(?:isn'?t|aren'?t) just (?:a|an|another) [^.;!?]{1,40}[.;,]\s*(?:it'?s|they'?re)\b", '"isn\'t just X. It\'s Y"'),
     (r"\blet'?s dive (?:in|into)\b|\bdive deep\b|\bdeep dive into the world\b", '"let\'s dive in"'),
-    (r"\bhere'?s the (?:thing|kicker|breakdown|catch)\b", '"here\'s the thing/breakdown"'),
+    (r"\bhere'?s (?:the (?:thing|kicker|breakdown|catch|deal|truth|scoop)|how it works|what you need)\b", '"here\'s the thing/deal/breakdown"'),
     (r'\bnavigat(?:e|ing) the (?:complex|ever|world|challenges)', '"navigate the complex..."'),
     (r'\bthe best of both worlds\b', 'cliche'), (r'\bembark(?:ed|ing)? on\b', '"embark on"'),
     (r'\bwhether you\'?re a [^.]{1,40} or a\b', '"whether you\'re an X or a Y"'),
@@ -171,7 +171,7 @@ def tells(md):
         if n > cap:
             soft.append((why, n, cap))
     # rule-of-three stacks: "X, Y, and Z" adjective/noun triplets
-    triples = len(re.findall(r'\b\w+, \w+(?: \w+)?, and \w+', low))
+    triples = len(re.findall(r'\b\w+, \w+(?: \w+)?,? (?:and|or) \w+', low))
     if triples > max(1, nwords // 350):
         soft.append(('rule-of-three lists "X, Y, and Z"', triples, max(1, nwords // 350)))
     # headings every few lines = listicle
@@ -242,7 +242,16 @@ def score(md, prof):
     return {'similarity': round(total, 1), 'stylometry': round(100 * stylo, 1),
             'function_words': round(100 * fw, 1), 'burrows_delta': round(delta, 3),
             'words': len(ws), 'features': per, 'hard_tells': hard, 'soft_tells': soft,
-            'pass': total >= 80 and not hard and len(soft) <= 1}
+            'rhythm_distance': round(rhythm_dist(per), 2),
+            'rhythm_off': rhythm_off(per),
+            'pass': total >= 80 and not hard and len(soft) <= 1 and not rhythm_off(per)}
+
+CORE = ['sent_len_mean', 'short_sent_ratio', 'commas_per_sent', 'word_len_mean', 'contractions', 'past_ratio']
+RHYTHM_MAX = 1.4  # his own posts, held out, score 0.47-1.35
+def rhythm_dist(per):
+    return st.mean(abs(per[k]['z']) for k in CORE)
+def rhythm_off(per):
+    return rhythm_dist(per) > RHYTHM_MAX
 
 def report(r):
     print(f"SIMILARITY  {r['similarity']}%   (stylometry {r['stylometry']}%, function-words {r['function_words']}%, delta {r['burrows_delta']}, {r['words']} words)")
@@ -257,6 +266,7 @@ def report(r):
     print('SOFT TELLS (over limit):', 'none' if not r['soft_tells'] else '')
     for t in r['soft_tells']:
         print(f'  {t[1]} > {t[2]}  {t[0]}')
+    print(f"CORE RHYTHM DISTANCE {r['rhythm_distance']} (must be <= {RHYTHM_MAX}; avg SDs from him on: {', '.join(CORE)})")
     print('RESULT:', 'PASS' if r['pass'] else 'REVISE')
 
 def main(a):

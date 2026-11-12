@@ -16,12 +16,18 @@ He writes like he's catching up with friends from the security community: excite
 3. **Draft** in the voice described here. Read `references/voice-samples.md` first and keep it open. Those are his real sentences, and they matter more than any rule below.
 4. **Score it:**
    ```bash
+   # from the repo root (or use the absolute path to this skill's scripts/ folder)
    python3 .claude/skills/writer/scripts/style_check.py path/to/draft.md
    ```
    It prints the similarity to his posts, the features furthest from his voice (with his real values), and any AI tells.
-5. **Revise until it prints `RESULT: PASS`.** That means similarity ≥ 80%, **zero hard tells**, and at most one soft tell. Fix what the report names: if `contractions` is low, contract; if `short_sent_ratio` is low, add fragments; if `headings_per_1k` is high, cut headings. Fix by rewriting the way he would, never by stuffing in keywords. Two "lol"s and one "guess what" is him. Six slang words in a paragraph is a parody.
+5. **Revise until it prints `RESULT: PASS`.** That means similarity ≥ 80%, **zero hard tells**, at most one soft tell, and **core rhythm distance ≤ 1.4**, the average number of SDs the draft sits from him on sentence length, short-sentence share, commas per sentence, word length, contractions and past-tense share (his own posts score 0.5–1.35 on this). Fix what the report names, in either direction:
+   - `short_sent_ratio` high / `sent_len_mean` low / `commas_per_sent` low → the draft is too choppy (the usual failure). Join fragments into his comma-strung sentences: "I had 79 subdomains to check, and instead of using Eyewitness I went through them manually." Keep only the fragments that land a joke or a beat.
+   - `short_sent_ratio` low / `long_sent_ratio` high → split a sentence and add a punchy fragment.
+   - `contractions` low → contract. `headings_per_1k` high → cut headings. `past_ratio` high → add a present-tense status line ("I'm still dealing with this", "It's live now").
+   - `word_len_mean` low → you dumbed it down. He uses real technical words (methodology, responsiveness, reconnaissance) next to the slang.
+   - Don't force features he only uses sometimes (present perfect, "we") just to move a number; similarity above 80% is the bar, not a perfect match on every line. Fix by rewriting the way he would, never by stuffing in keywords. Two "lol"s and one "guess what" is him. Six slang words in a paragraph is a parody.
 6. **Read-aloud pass** (the scorer can't do this): does every paragraph sound like something he'd say out loud to another pentester? Cut any sentence that sounds like a press release, a LinkedIn influencer or a textbook.
-7. Deliver as a Jekyll post (front matter below), saved to `_posts/YYYY-MM-DD-Title-With-Dashes.md` if the user wants it in the repo. Report the final score line.
+7. **Deliver** as a Jekyll post (front matter below). Save it to `_posts/YYYY-MM-DD-Title-With-Dashes.md` when the user asks for it in the blog; otherwise save it wherever they asked, or show it in chat. Report the final score line, plus a **"Check these"** list of every detail you added that wasn't in the brief (jokes about how he felt are fine; events, numbers, quotes or results are not, so either cut them or list them).
 
 ## Voice
 
@@ -40,7 +46,7 @@ He writes like he's catching up with friends from the security community: excite
 - "Till next time" / "Until next time, ..." / "The brain is just getting started."
 - A plain CTA: "Connect with me and let's talk tech, hostels, or just life:" plus the LinkedIn link.
 
-**Rhythm.** His sentences average about 14 words, but they swing a lot. About 1 sentence in 5 is six words or fewer, usually a fragment that lands a beat: "This is something new. Something better." / "Then it hit me." / "Lesson learned: think about all screens from day one." / "It just… clicked." Paragraphs run 2–4 sentences. About 1 sentence in 11 starts with *And*, *But*, *So*, *Now* or *Anyway*. Almost nothing runs past 30 words, except the occasional excited run-on held together with commas.
+**Rhythm.** His sentences average about 14 words, and most of them are medium-length, comma-strung, talky sentences: "I watched a couple of YouTube videos, got inspired by the clean look of Whimsical (the tool I used for wireframing), and just started… drawing." He averages almost one comma per sentence. Fragments are seasoning, not the meal: only about 1 sentence in 5 is six words or fewer, and those land a beat: "This is something new. Something better." / "Then it hit me." / "It just… clicked." Writers imitating him almost always overdo the fragments, so if half your paragraph is three-word sentences, merge them. Paragraphs run 2–4 sentences. About 1 sentence in 11 starts with *And*, *But*, *So*, *Now* or *Anyway*. Almost nothing runs past 30 words, except the occasional excited run-on held together with commas.
 
 **Tenses** (about two-thirds of his verbs are past tense; he tells stories):
 - **Simple past** for what happened: "I spent two full days untangling that mess." "I decided to dive head-first into the Cybercon CTF."
@@ -69,14 +75,13 @@ He writes like he's catching up with friends from the security community: excite
 - `...` or `…` for trailing off and comic timing ("just started… drawing.").
 - Parentheses for asides, about 4 per 1,000 words.
 - `!` only in genuinely hyped moments, not on every sentence.
-- **Never an em dash (—).** Where an AI would use one, he uses a comma, `...`, parentheses or a new sentence. A spaced hyphen ` - ` is fine once in a while.
+- **Never an em dash (—).** Where an AI would use one, he uses a comma, `...`, parentheses or a new sentence. A spaced hyphen or en dash (` - ` / ` – `) is fine once per post at most.
 - Bold (`**Hunter's Board**`) for feature and product names, not for random emphasis.
 
 **Human texture** (keep 1–3 per post; never fake spelling mistakes of common words):
 - A missing space before a parenthesis: "mobile(terrible thing to do)", "minute(literally just..."
 - A lowercase sign-off or lowercase inner thought
 - A comma splice or run-on when he's excited: "It took a whole year! a whole bunch of supabase RLS violations, CSS nightmares because..."
-- Lowercase brand names typed casually (supabase, linkedin) once in a while
 
 ## Post shapes
 
@@ -86,7 +91,7 @@ He writes like he's catching up with friends from the security community: excite
 
 **Structure rules:**
 - Headings: 2–5 `###` headings in a normal post, with casual or jokey names ("The Bug That Shut RAWPA Down", "The Name, The Sauce, The Year", "The Current State: It Works… On My Machine"). Never "Introduction", "Conclusion", "Lessons Learned", "Key Takeaways" or "What's Next" on its own.
-- Bullets only for lists of updates or features, 3–5 items, each a full casual sentence. No more than three `**Label:** text` bullets in a post.
+- Bullets only for lists of updates or features, 2–5 items, each a full casual sentence. Plain sentences are better than `**Label:** text` bullets; use at most three labelled bullets in a post. A "Quick update" heading counts toward the 2–5 heading limit.
 - Titles: punchy, usually a joke, a pun or a question: "Web Pentesters Can't Do CTFs? Hold My Shell.", "It's Alive! RAWPA Gained a Brain.", "Did Evolution Skip Student Hostels".
 - Images: `![Descriptive alt text](/assets/img/name.webp)` on its own line right after the paragraph it illustrates.
 - Length: 400–900 words unless asked.
@@ -114,10 +119,10 @@ The scorer catches most of them, but know them yourself.
 
 **Shapes that give AI away:**
 - "It's not just X, it's Y" / "This isn't just X. It's Y." / "Not only X, but also Y". Say the thing directly.
-- Rule of three everywhere ("fast, reliable, and scalable"). He lists in twos, or in long casual runs.
+- Rule of three everywhere ("fast, reliable, and scalable"). In running prose he lists in twos or in long casual runs; save three-item lists for when there really are three things.
 - Every paragraph the same length, every sentence 15–20 words. Mix in fragments.
 - A listicle skeleton: a heading every two paragraphs, bold-label bullets under each.
-- Explaining with colons: "Here's how it works:" then a list. Tell it as a story.
+- Explaining with colons: "Here's how it works:" / "Here's the deal:" then a list. Tell it as a story.
 - A tidy moral at the end ("This experience taught me the importance of..."). He ends with a joke, a plan or a sign-off.
 - Hedged, balanced, polite neutrality. He has opinions: "It was a dumb, brute-force way to solve a problem."
 - Marketing claims ("empowers testers to achieve more"). He says what it does and whether it's broken.

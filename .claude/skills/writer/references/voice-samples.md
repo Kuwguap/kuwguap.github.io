@@ -1,6 +1,6 @@
 # Voice samples: Rodney's real sentences
 
-These are taken from his posts with his typos kept, picked for the parts that sound most like him. The only edit: em dashes became commas, because the skill bans them. Some of his older posts contain AI-polished passages ("game-changer", "seamlessly", "It's not just X; it's Y"). Those are deliberately left out, so don't copy them even if you find them in `_posts/`.
+These are taken from his posts with his typos kept, picked for the parts that sound most like him. Edits: em dashes became commas, and phrases the skill bans ("isn't just X", "let's dive into", repeated "journey"/"excited"/"insightful") were trimmed so the samples never contradict the rules. Some of his older posts contain AI-polished passages ("game-changer", "seamlessly", "It's not just X; it's Y"). Those are deliberately left out, so don't copy them even if you find them in `_posts/`.
 
 Each section is one post. Copy the moves, not the sentences.
 
@@ -42,11 +42,9 @@ Guess what? I have exams in two days. Yes, actual university exams. And what am 
 
 So, while I should be memorizing lecture notes, I thought I'd get you up to speed on the wild ride of the last few weeks.
 
-Anyway, let's dive into the mistakes and the madness.
-
 I'll start with the rookie mistake that came back to bite me. I had never done any real UI/UX design before this project. I watched a couple of YouTube videos, got inspired by the clean look of Whimsical (the tool I used for wireframing), and just started… drawing.
 
-No device responsiveness. No specific screen sizes. Just rectangles on a screen. It looked good on my development PC, so I figured, "Ship it!" A few weeks ago, a tester rightfully pointed out that the mobile view was completely broken. I spent two full days untangling that mess and making the app truly responsive. Lesson learned: think about all screens from day one.
+No device responsiveness. No specific screen sizes. Just rectangles on a screen. It looked good on my development PC, so I figured, "Ship it!" A few weeks ago, a tester rightfully pointed out that the mobile view was completely broken. I spent two full days untangling that mess and making the app responsive. Lesson learned: think about all screens from day one.
 
 That aside… about two days ago, I noticed features on RAWPA were failing.
 
@@ -128,9 +126,9 @@ I'm happy to say that the project is, for the most part, "basically done."
 
 The first output was fantastic! It worked. But as I tried to make the RAG model more precise, I ran into some noise in the responses, and eventually, the code broke.
 
-RAWPA isn't just another "get bugs quick scheme." It's about hitting a roadblock where you're like, "damn, I've tried everything... so what now?" That's where RAWPA is there to help.
+It's about hitting a roadblock where you're like, "damn, I've tried everything... so what now?" That's where RAWPA is there to help.
 
-On my journey scouring the net, I realized **lostsec** has a site with almost the same purpose as what I'm building. Far from being discouraged, this gave me the will to continue.
+Scouring the net, I realized **lostsec** has a site with almost the same purpose as what I'm building. Far from being discouraged, this gave me the will to continue.
 
 I know some people might have the wrong idea about what this app is for, but I believe it will help someone out there, and that is good enough for me.
 
@@ -147,7 +145,7 @@ Till next time
 ## 2025-06-23-series-3-Internet-meet-RAWPA-part-1.md
 Hey internet, this is RAWPA, RAWPA internet!
 
-Man, the journey of building RAWPA has been a rollercoaster of code, coffee, and some seriously insightful conversations.
+Man, building RAWPA has been a rollercoaster.
 
 You know I'm all about getting this tool into your hands for testing, so when inspiration strikes, I gotta act fast.
 
@@ -181,7 +179,7 @@ I'm glad you asked.
 ## 2025-07-01-series-4-My-Pentesting-AI-Learned-A-New-Word-Orchestrate.md
 Hey everyone, Kuwguap here.
 
-It's been a minute(literally just a day or two lol) since we last talked about the journey with RAWPA. ... Gained 30 users and about 30% of them active daily.
+It's been a minute(literally just a day or two lol) since we last talked about RAWPA. ... Gained 30 users and about 30% of them active daily.
 
 I kept coming back to one word: **Orchestrate**.
 
@@ -191,7 +189,7 @@ Now, for the classic developer reality check. The Pentest Orchestrator is fully 
 
 So, while the feature is *built*, it's not yet *live*.
 
-The journey continues, and I can't wait to get the Orchestrator into your hands. Stay tuned.
+I can't wait to get the Orchestrator into your hands. Stay tuned.
 
 ## 2025-05-09-so-what-now.md
 Well, here we go. Putting thoughts down "on paper" – or rather, onto a digital page that anyone with an internet connection can stumble upon. It feels a little… exposed, to be honest.
@@ -200,9 +198,7 @@ Sometimes, you find yourself staring at a list of open services, thinking, "Okay
 
 I can't divulge too much just yet – think of it as a recipe I'm still perfecting in the kitchen.
 
-This isn't about automating everything. Far from it.
-
-And I'm excited (and a little nervous) to share that journey with you. Stay tuned for the next installment.
+Stay tuned for the next installment.
 
 ## 2025-05-09-wireframing-ui-development.md
 My first step was wireframing. I initially started with Balsamiq, thinking its simplicity would be a good fit. However, it quickly felt *too* simple for what I had in mind.
@@ -216,7 +212,7 @@ This is what the UI is now.
 ## 2025-06-18-blossom-hackathon.md
 Hey everyone,
 
-I'm excited to share a project I've been pouring my energy into lately: **Blossom**, a voice-enabled mental health companion. And guess what? I recently submitted Blossom to its very first hackathon!
+And guess what? I recently submitted Blossom to its very first hackathon!
 
 Scope management was another big one – I had so many ideas for Blossom, but I had to prioritize the core features to deliver a functional prototype.
 

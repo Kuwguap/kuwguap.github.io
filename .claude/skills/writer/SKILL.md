@@ -25,9 +25,11 @@ He writes like he's catching up with friends from the security community: excite
    - `short_sent_ratio` low / `long_sent_ratio` high → split a sentence and add a punchy fragment.
    - `contractions` low → contract. `headings_per_1k` high → cut headings. `past_ratio` high → add a present-tense status line ("I'm still dealing with this", "It's live now").
    - `word_len_mean` low → you dumbed it down. He uses real technical words (methodology, responsiveness, reconnaissance) next to the slang.
-   - Don't force features he only uses sometimes (present perfect, "we") just to move a number; similarity above 80% is the bar, not a perfect match on every line. Fix by rewriting the way he would, never by stuffing in keywords. Two "lol"s and one "guess what" is him. Six slang words in a paragraph is a parody.
-6. **Read-aloud pass** (the scorer can't do this): does every paragraph sound like something he'd say out loud to another pentester? Cut any sentence that sounds like a press release, a LinkedIn influencer or a textbook.
-7. **Deliver** as a Jekyll post (front matter below). Save it to `_posts/YYYY-MM-DD-Title-With-Dashes.md` when the user asks for it in the blog; otherwise save it wherever they asked, or show it in chat. Report the final score line, plus a **"Check these"** list of every detail you added that wasn't in the brief (jokes about how he felt are fine; events, numbers, quotes or results are not, so either cut them or list them).
+   - Don't force features he only uses sometimes (present perfect, "we", -ly adverbs, questions) just to move a number. Once it prints PASS, stop tuning numbers; only the read-aloud pass and fact checks remain, and re-scoring after those edits is fine.
+   - Word counts in the brief mean the scorer's count (body prose only, without front matter, image lines or link URLs). Fix by rewriting the way he would, never by stuffing in keywords. Two "lol"s and one "guess what" is him. Six slang words in a paragraph is a parody.
+6. **Read-aloud pass** (the scorer can't do this): does every paragraph sound like something he'd say out loud to another pentester? Cut any sentence that sounds like a press release, a LinkedIn influencer or a textbook. Then run the **imitation checklist** below; it covers what a sharp reader catches even when the numbers pass.
+6b. **Cold read** (when you can start a subagent): give a fresh agent only the draft text, no front matter and no mention of Rodney, and ask: "Was this written by AI? Quote every AI tell." Fix every tell it quotes, re-score, and repeat once if needed.
+7. **Deliver** as a Jekyll post (front matter below). Save it to `_posts/YYYY-MM-DD-Title-With-Dashes.md` when the user asks for it in the blog; otherwise save it wherever they asked, or show it in chat. Report the final score line, plus a **"Check these"** list. Put on it any **event, number, quote, result or cause** you added that isn't in the brief (e.g. "PM2 kept forgetting the variables", "it works now"), and any fact you pulled from an older post. Don't list feelings, jokes or rewordings of the brief. If something on the list is a big claim, cut it instead.
 
 ## Voice
 
@@ -59,13 +61,15 @@ He writes like he's catching up with friends from the security community: excite
 
 **Contractions everywhere**: I'm, I've, it's, didn't, wasn't, that's, gotta, ain't, y'all. Uncontracted "I am" or "it is" reads as a robot.
 
-**His words and moves** (use 2–4 per post, spread out, never stacked):
+**His words and moves.** This list is for recognizing his register, not a menu. A blind test caught drafts that used the same five of these in every post. Per post, use **at most two** items from this list verbatim, and invent the rest of the casual feel in his register: plain talk, an aside, a blunt opinion. Never use "I'll be real with you, though", "Man," and "boom" in the same post.
+
+The list:
 - "lol" lowercase at the end of a clause ("I completely lost my train of thought, lol."), or "LOL." once as its own sentence
 - "Guess what?", "I'll be real with you, though.", "Man,", "Seriously.", "Ugh.", "boom"
 - "hit me like a bag of bricks", "train of thought" / "thought train", "came in clutch", "hyped", "a hassle", "a grind", "the madness", "a whole different beast", "dumb, brute-force", "insane", "it ain't coming back, guys", "the sauce is ready to be served", "cooking in private"
 - Self-roast parentheticals: "(I know, I like the hassle)", "(I highly do not advise this, lol)", "(terrible thing to do)", "(literally just a day or two lol)"
 - Honest blame: "Why? Because I was sleepy and not thinking straight."
-- A one-word question answered right away, max once per post: "The culprit? A series of logical bugs born from late-night coding sessions."
+- A short question answered right away, max once per post: "The culprit? A series of logical bugs born from late-night coding sessions." / "Why? Because..."
 - Real numbers and real tool names: 33 users, 16,000 reads, 79 subdomains, 2nd place, Firebase, Upstash Redis, Vercel, subfinder, Burp Suite, HackerOne
 - Local color when it fits: Ghana, KNUST, trotro, exams, hostels
 - Inner thoughts as a lowercase blockquote: `> did evolution skip student booking in ghana?`
@@ -76,7 +80,7 @@ He writes like he's catching up with friends from the security community: excite
 - Parentheses for asides, about 4 per 1,000 words.
 - `!` only in genuinely hyped moments, not on every sentence.
 - **Never an em dash (—).** Where an AI would use one, he uses a comma, `...`, parentheses or a new sentence. A spaced hyphen or en dash (` - ` / ` – `) is fine once per post at most.
-- Bold (`**Hunter's Board**`) for feature and product names, not for random emphasis.
+- Bold (`**Hunter's Board**`) for his own products and features (RAWPA, Katalyma, Hunter's Board, Neural Pathway), and occasionally for a third-party product he integrated (**Upstash Redis**). Not for libraries in passing, and not for random emphasis.
 
 **Human texture** (keep 1–3 per post; never fake spelling mistakes of common words):
 - A missing space before a parenthesis: "mobile(terrible thing to do)", "minute(literally just..."
@@ -96,7 +100,7 @@ He writes like he's catching up with friends from the security community: excite
 - Images: `![Descriptive alt text](/assets/img/name.webp)` on its own line right after the paragraph it illustrates.
 - Length: 400–900 words unless asked.
 
-Front matter template:
+Front matter template (`category` is free text: he uses RAWPA and "Building Katalyma"; drop `series` and `series_part` for a one-off post; link his LinkedIn as `[LinkedIn](https://www.linkedin.com/in/glenn-osioh-85104827b/)`):
 ```yaml
 ---
 title: "Punchy Title Here"
@@ -108,6 +112,27 @@ series_part: 1
 tags: [rawpa, cybersecurity, devlog]
 ---
 ```
+
+## Imitation checklist (what gives away an AI pretending to be him)
+
+A skeptical reader flagged earlier drafts of this skill as AI at 80–88% while his real post scored 15%. These were the reasons. Check each one:
+
+- **Catchphrase stacking.** Too many signature phrases, spaced evenly, one or two per section, like a metronome. Real Rodney clusters: one section is full of jokes, the next is plain and technical with no slang at all.
+- **Formula sections.** Every section running problem → "The culprit?" → fix → "Boom". Use that beat at most once. Elsewhere, just tell it in order, leave something messy or unresolved ("still dealing with this"), or end a section abruptly.
+- **Sanded-off edges.** He has real roughness, so keep 2–4 of these per post:
+  - a slightly odd or over-formal word choice ("my thought process was seriously buttressed by", "a massive plateau of pentest writeups");
+  - a run-on with a missing comma ("this stuff is very technical you must know what you're doing");
+  - inconsistent capitals (Linkedin, knowledgebase, Methodology mid-sentence);
+  - a mood flip ("Long story short, I walked out with 2nd place" → later "Unfortunately, I came in 2nd.");
+  - a missing space after a comma or before a parenthesis;
+  - a "lol" that lands slightly off.
+
+  Never misspell common words.
+- **Neat epiphanies and pull-quotes.** "Then it hit me. The problem wasn't X, it was Y." He has "Then it hit me", but the payoff is concrete and goofy, not a tidy insight.
+- **Moral closers.** "That felt fair to everyone." "It points you in a direction, and you do the actual work." He closes on a plan, a complaint, a joke or a sign-off.
+- **Fake intimacy.** "you know the story", or callbacks to stories the post never tells. Only reference a past post if it's real, and name it.
+- **Too-clean numbers and cute headings in every section.** Use at most one jokey heading; the others are plain ("Quick Update on RAWPA", "The Road Ahead").
+- **Sign-off reuse.** Vary it: one line, two lines, or just the CTA. Don't paste the same three-line sign-off every time.
 
 ## AI tells: never ship these
 
@@ -122,7 +147,7 @@ The scorer catches most of them, but know them yourself.
 - Rule of three everywhere ("fast, reliable, and scalable"). In running prose he lists in twos or in long casual runs; save three-item lists for when there really are three things.
 - Every paragraph the same length, every sentence 15–20 words. Mix in fragments.
 - A listicle skeleton: a heading every two paragraphs, bold-label bullets under each.
-- Explaining with colons: "Here's how it works:" / "Here's the deal:" then a list. Tell it as a story.
+- Explaining with colons: "Here's how it works:" / "Here's the deal:" then a list. Tell it as a story. A plain lead-in to update bullets is fine ("Speaking of the lab, here are some quick updates on the project:" is his).
 - A tidy moral at the end ("This experience taught me the importance of..."). He ends with a joke, a plan or a sign-off.
 - Hedged, balanced, polite neutrality. He has opinions: "It was a dumb, brute-force way to solve a problem."
 - Marketing claims ("empowers testers to achieve more"). He says what it does and whether it's broken.

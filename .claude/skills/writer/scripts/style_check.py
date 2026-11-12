@@ -130,6 +130,8 @@ HARD_TELLS = [  # (regex, why)
     (r"\bit'?s (?:important|worth) (?:to note|noting)\b", '"it\'s worth noting"'),
     (r"\b(?:it'?s|it is|this is|that'?s|that is|is) not (?:just|only|merely|about) [^.;!?]{1,60}[;,.]\s*(?:it'?s|it is|this is|that'?s|but)\b", '"it\'s not X, it\'s Y" construction'),
     (r"\bnot (?:just|only) [^.;!?]{1,40}, but (?:also )?\b", '"not just X, but Y"'),
+    (r"\b(?:wasn'?t|isn'?t|was not|is not) (?:really )?(?:the |a |about )?[^.;!?]{1,40}[,;]\s*it (?:was|is|'s)\b", '"the problem wasn\'t X, it was Y" reveal'),
+    (r"\byou know the (?:story|drill)\b|\bwe'?ve all been there\b", 'fake-intimacy line'),
     (r"\b(?:isn'?t|aren'?t) just (?:a|an|another) [^.;!?]{1,40}[.;,]\s*(?:it'?s|they'?re)\b", '"isn\'t just X. It\'s Y"'),
     (r"\blet'?s dive (?:in|into)\b|\bdive deep\b|\bdeep dive into the world\b", '"let\'s dive in"'),
     (r"\bhere'?s (?:the (?:thing|kicker|breakdown|catch|deal|truth|scoop)|how it works|what you need)\b", '"here\'s the thing/deal/breakdown"'),
@@ -170,6 +172,12 @@ def tells(md):
             cap = max(2, nwords // 120)
         if n > cap:
             soft.append((why, n, cap))
+    # catchphrase stacking: signature phrases from SKILL.md used verbatim
+    sig = [r"i'?ll be real with you", r'\bman,', r'\bboom\b', r'\bguess what\b', r'\bthe culprit\?', r'\bthen it hit me\b',
+           r'\bcame in clutch\b', r'\bbag of bricks\b', r'\bhyped\b', r'\bugh\b', r'\bseriously\.', r'\bkeep hacking\b']
+    nsig = sum(1 for rx in sig if re.search(rx, low, flags=re.I))
+    if nsig > 5:  # his busiest post (Wildest Week) uses 5
+        hard.append(('catchphrase stacking: %d different signature phrases, max 5 (blind readers flag this)' % nsig, nsig))
     # rule-of-three stacks: "X, Y, and Z" adjective/noun triplets
     triples = len(re.findall(r'\b\w+, \w+(?: \w+)?,? (?:and|or) \w+', low))
     if triples > max(1, nwords // 350):
